@@ -6,3 +6,8 @@ puts "Olá Mundo"
 puts "Digite algo: "
 algo = gets.chomp 
 puts algo
+
+#Variávies#
+nome = "Borges"
+nota = 10
+cor = "Red"
