@@ -22,3 +22,9 @@ number2 = 30
 result = number1 + number2
 puts result
 # O resultado será 50 #
+
+#Array #
+alunos = ['André', 'Pedro', 'Carolina']
+alunos[0] #"André"
+alunos[1] #"Pedro"
+alunos[2] #"Carolina"
