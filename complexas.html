@@ -27,7 +27,7 @@ alunos.pop() # remove o último valor do array, nesse caso, “Laura”
 </p>
 <h2>Iterando em arrays</h2>
 <h3>Método EACH DO</h3>
-<p>É muito comum, em diversas situações, precisarmos iterar, ou seja, verificar cada um dos elementos de um array, e fazer algum processamento se for necessário.
+<>É muito comum, em diversas situações, precisarmos iterar, ou seja, verificar cada um dos elementos de um array, e fazer algum processamento se for necessário.
 Exemplo: 
 
 meu_array = [10, 20, 30, 40, 50]
@@ -38,6 +38,25 @@ end
 
 Na linha 1, criamos um array com cinco elementos numéricos quaisquer. Na linha 3, usamos o método each no meu_array para que possamos iterar entre seus elementos. A cada iteração do laço, um dos valores armazenados no meu_array será atribuído à variável elemento (definida entre | e |). Portanto, nesse caso, na primeira iteração, o valor de elemento será 10; na segunda iteração, o valor de elemento será 20; na terceira iteração, o valor de elemento será 30, e assim sucessivamente, até que a variável elemento tenha assumido o valor de cada posição do meu_array. Vale salientar que, o nome da variável elemento é definido pelo próprio programador, obedecendo as normas de nomenclatura de variáveis.
 <H3>Método MAP</H3>
+<p>Cria um Array baseando-se em valores de outro array existente.Diferente do each visto a cima em vários aspectos, o mais visível sem dúvidas é a sua característica de retornar um Array com o resultado do bloco aplicado para cada elemento recebido.
+Primeiro, você tem um array, mas também pode ser um hash ou um intervalo.
+
+Então você paga map com um bloco. O bloco é essa coisa entre colchetes { ... }. Dentro do bloco, você diz COMO deseja transformar cada elemento no array. É basicamente uma função.
+Números duplicados :
+
+matriz = [ 1 , 2 , 3 ]
+new_matriz = matriz.map do |n|   
+puts n * 2
+end
+puts new_matriz
+
+#[2, 4, 6]
+
+Converter strings em inteiros :
+
+matriz = [ "11" , "21" , "5" ]
+variedade.map { |str| estr.to_i }  
+# [11, 21, 5]
 </p>
 </body>
 </html>
