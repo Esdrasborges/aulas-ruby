@@ -1,5 +1,9 @@
-cores_validas = ['vermelho', 'verde', 'azul']
-carros = [{tipo: 'porsche', cor: 'vermelho'}, {tipo: 'mustang', cor: 'laranja'}, {tipo: 'prius', cor: 'azul'}]
-carros.select{ |carro| cores_validas.include?(carro[:cor]) }.map{ |carro| carro[:tipo]}
+real_madrid = {2 => 'Daniel Carvajal', 17 => 'Lucas Vázquez', 16 => 'Álvaro Odriozola', 18 => 'Aurélien Tchouameni', 4 => 'D. Alaba'}
 
-puts carros.select
+puts "Selecionando Jogadores com número acima de 10"
+
+selection_value = real_madrid.select do |key , value|
+    key > 10
+end
+
+puts selection_value
