@@ -1,5 +1,11 @@
-cores_validas = ['vermelho', 'verde', 'azul']
-carros = [{tipo: 'porsche', cor: 'vermelho'}, {tipo: 'mustang', cor: 'laranja'}, {tipo: 'prius', cor: 'azul'}]
-carros.select{ |carro| cores_validas.include?(carro[:cor]) }.map{ |carro| carro[:tipo]}
+# meu_hash = { :um => 1, :dois => 2, :tres => 3 }
 
-puts carros.select
+# meu_hash.each_key do |chave|
+#   puts "A posição #{chave} guarda o valor #{meu_hash[chave]}"
+# end
+#Ao ives de usar DO e END podemos interar assim
+# meu_hash = { :um => 1, :dois => 2, :tres => 3 }
+
+# meu_hash.each_key { |chave|
+#   puts "A posição #{chave} guarda o valor #{meu_hash[chave]}"
+# }

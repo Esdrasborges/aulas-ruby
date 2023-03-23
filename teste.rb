@@ -1,11 +1,10 @@
 #Seleciona sobrenomes e retonar a posição e se ele confere atravez do True e False
-name = ["Pamela Araujo", "Manoel Alves", "Carlos Araujo", "Sydnei Araujo"]
-    names = name.select do |n|
-        puts n.include?('Araujo')
-        puts "#{n}"
-    end 
+# name = ["Pamela Araujo", "Manoel Alves", "Carlos Araujo", "Sydnei Araujo"]
+#     names = name.select do |n|
+#        print n.include?('Araujo')
+#         puts "\n #{n}"
+#     end 
  
-   
 
 # hash = {nome: "Esdra", idade: "23", relacionamento: "Namorando"}
 # new_hash = hash.each do |a , b|
@@ -29,5 +28,16 @@ name = ["Pamela Araujo", "Manoel Alves", "Carlos Araujo", "Sydnei Araujo"]
 #         puts jogo 
 #     end
 #  puts "O total de jogadores é #{brasil.length}"
+
+#Metodo MAP
+
+nomes = %w[João Maria José Mateus]
+     nomes_completos = nomes.map! do |nomes_completos|
+         nomes_completos + ' Dos Santos'
+     end
+     puts nomes
+     puts "###################"
+     puts nomes_completos
+
 
 

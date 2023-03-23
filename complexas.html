@@ -76,5 +76,21 @@ aluno[:nome] = 'Maria'
 puts aluno[:nome]
 Para criar um hash em Ruby basta usar chaves {} e, dentro dessas chaves, declarar os pares de chave e valor separados por :. Para acessar um dado de um hash, basta usar colchetes [] com a chave correspondente. O comando retornará o valor associado à chave. Caso a chave não exista, será retornado nil (nulo).
 </p>
+<h1>Estruturas de controle de fluxo condicionais</h1>
+<p>Estruturas de controle de fluxo, são comandos e instruções que nos permitem controlar como a execução do código será realizada. Os códigos que produzimos até o presente momento não incluíram nenhuma estrutura de controle de fluxo, e, portanto, a execução deles é simplesmente linear, ou seja, inicia na primeira linha, segue a execução das linhas seguintes e termina na última, sem nenhum trecho de código condicional ou repetição.
+</p>
+<h2>Estruturas condicionais: if e else</h2>
+<p>Expressaõ que verificar se uma condição é verdadeira(tue), e a partir desse resultado determina se as instruções dentro do seu corpo(estrutura) serão ou não execultadas.
+  if condicao
+  # trecho de código a ser executado quando a condição for verdadeira
+ end
+Exemplo: 
+  odd?() # verifica se 7 é ímpar e retorna true
+  even?() # verifica se 4 é par e retorna true
+  if 1.odd?()
+    puts '1 é um número ímpar.'
+ end
+ A primeira linha do código acima é uma condição “se 1 for ímpar”. Na linha seguinte, com um recuo de dois espaços para mostrar que o código está dentro do if, há um código que só será executado se a condição for verdadeira. Então terminamos com a palavra end. Ela mostra que acabamos de escrever tudo o que queremos executar se aquela condição for verdadeira.
+</p>
 </body>
 </html>
