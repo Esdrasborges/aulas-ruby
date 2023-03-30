@@ -110,5 +110,19 @@ Com ela podemos facilmente definir uma série de condições e respostas, reduzi
    puts 'Tirou 10! Você deve ser o melhor aluno que já tive!'
  end 
 </p>
+<h2>Unless</h2>
+<p>O unless, que em inglês significa "a menos que", tem um comportamento inverso ao do if. O trecho de código abaixo do if é executado quando a condição é verdadeira. O trecho de código abaixo do unless é executado quando a condição for falsa. 
+  unless condicao
+  # trecho de código a ser executado quando a condição for falsa
+  end
+No Exemplo de código 10, o trecho de código da linha 2 só será executado quando a condição do unless for falsa. Para exemplificar o uso do unless, vamos usar um método chamado empty?. O método empty? é executado sobre uma variável que guarda uma string e verifica se ela está vazia ou não, portanto, seria o equivalente a testar variavel == "". Esse método retorna true quando a string está vazia, e false caso contrário.
+  Exemplo:
+  puts "Digite o seu nome:"
+  nome = gets.chomp
+  
+  if nome.empty?
+    puts "Você não digitou seu nome."
+  end
+</p>
 </body>
 </html>

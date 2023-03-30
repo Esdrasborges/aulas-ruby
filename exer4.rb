@@ -20,19 +20,24 @@
 # end
 
 #CASE = ENQUANTO
-nota = 7
-case nota
-when 0
-  puts 'Você tirou zero! Precisa melhorar…'
-when 1..4
-  puts 'Reprovado… precisa se esforçar mais...'
-when 5
-  puts 'Passou raspando!'
-when 6..9
-  puts 'Parabéns, você foi aprovado.'
-else
-  puts 'Tirou 10! Você deve ser o melhor aluno que já tive!'
-end 
+# nota = 10
+# if (nota < 0)
+#   puts "Não identificamos sua resposta!"
+# elsif (nota >= 11)
+#   puts "Não identificamos sua resposta!"
+# end
+# case nota
+# when 0
+#   puts 'Você tirou zero! Precisa melhorar…'
+# when 1..4
+#   puts 'Reprovado… precisa se esforçar mais...'
+# when 5
+#   puts 'Passou raspando!'
+# when 6..9
+#   puts 'Parabéns, você foi aprovado.'
+# when 10
+#   puts 'Tirou 10! Você deve ser o melhor aluno que já tive!'
+# end 
 
 # puts "Qual o personagem biblico que foi jogado na cova dos leões? "
 # resposta = gets.chomp
@@ -47,3 +52,23 @@ end
 #   else
 #     puts "Resposta Errada"
 # end
+
+#UNLESS
+# puts "Digite o seu nome:"
+# nome = gets.chomp
+
+# if nome.empty? #Metodo que verifica se uma string esta vazia
+#   puts "Você não digitou seu nome."
+# end
+
+# x = 10
+# unless x < 5
+#   puts "x é maior 5"
+# end
+
+puts "Digite o seu nome:"
+nome = gets.chomp
+
+unless nome.empty?
+  puts "Olá #{nome} Seja bem-vindo(a)!"
+end
