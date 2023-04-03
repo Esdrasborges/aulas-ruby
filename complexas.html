@@ -124,5 +124,46 @@ No Exemplo de código 10, o trecho de código da linha 2 só será executado qua
     puts "Você não digitou seu nome."
   end
 </p>
+<h1>Estruturas de Repetição</h1>
+<h2>While (ENQUANTO)</h2>
+<p>O while é uma estrutura de repetição que reproduz um trecho de código enquanto uma determinada condição é satisfeita, ou seja, ENQUANTO a condição for verdadeira o código será execuldado
+Exemplo:
+  condicao = true
+  while condicao
+    puts "Digite um número múltiplo de 5: "
+    numero = gets.chomp.to_i
+    if numero % 5 == 0
+      condicao = false
+    end
+  end
+  puts "#{numero} é múltiplo de 5!"
+</p>
+<h2>For (PARA)</h2>
+<p>O for é uma estrutura de repetição que executa um trecho de código várias vezes. Cada execução do for é chamada de iteração. Portanto dizemos que um for que executa 10 vezes possui 10 iterações.
+  for i in 1..10
+  puts "O valor de i é #{i}"
+end
+Observe, no Exemplo de código , que declaramos a variável i. Essa variável só existe dentro do for e ela assume um valor entre 1 e 10 a cada iteração. Na primeira execução do for, o valor de i é 1; na segunda execução do for, o valor de i é 2; na terceira execução do for, o valor de i é 3, e assim sucessivamente. O último valor que a variável i vai receber é 10.
+</p>
+<h2>Loop do</h2>
+<p>Em Ruby, a looppalavra-chave é usada para criar um loop infinito. O código dentro do loop continuará a ser executado até que você saia explicitamente do loop usando uma breakinstrução.
+Aqui está um exemplo de como usar a looppalavra-chave em Ruby:
+loop do
+        # code to be executed repeatedly
+puts "Hello, world!"
+end
+
+No exemplo acima, a puts "Hello, world!"instrução será executada repetidamente até que o loop seja interrompido.
+
+Para sair do loop, você pode usar a breakpalavra-chave. Por exemplo, você pode modificar o exemplo acima para sair do loop depois de imprimir a mensagem 10 vezes:
+  count = 0
+  loop do
+    puts "Hello, world!"
+    count += 1
+    break if count == 10
+  end
+
+  No exemplo acima, a count variável é inicializada em 0 e incrementada em 1 a cada iteração do loop. A break if count == 10instrução verifica se o valor de counté igual a 10 e sai do loop se for. Isso garantirá que a mensagem seja impressa exatamente 10 vezes antes que o loop seja encerrado.
+</p>
 </body>
 </html>
