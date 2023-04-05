@@ -163,7 +163,23 @@ Para sair do loop, você pode usar a breakpalavra-chave. Por exemplo, você pode
     break if count == 10
   end
 
-  No exemplo acima, a count variável é inicializada em 0 e incrementada em 1 a cada iteração do loop. A break if count == 10instrução verifica se o valor de counté igual a 10 e sai do loop se for. Isso garantirá que a mensagem seja impressa exatamente 10 vezes antes que o loop seja encerrado.
+No exemplo acima, a count variável é inicializada em 0 e incrementada em 1 a cada iteração do loop. A break if count == 10instrução verifica se o valor de counté igual a 10 e sai do loop se for. Isso garantirá que a mensagem seja impressa exatamente 10 vezes antes que o loop seja encerrado.
+</p>
+<h2>Métodos</h2>
+<p>gerenciáveis ​​e fáceis de entender.
+
+Em Ruby, um método é definido usando a palavra-chave def, seguido do nome do método e, opcionalmente, uma lista de parâmetros entre parênteses. O corpo do método é colocado entre chaves ou em uma estrutura do...end.
+  
+  Por exemplo, o seguinte código define um método simples em Ruby que recebe um argumento nome e imprime na tela:
+    def saudacao(nome)
+       puts "Olá, #{nome}!"
+    end
+Depois de definido, o método pode ser chamado em qualquer lugar do código, passando pelos argumentos necessários:
+
+    saudacao("João") # => Olá, João!
+    saudacao("Maria") # => Olá, Maria!
+
+Métodos em Ruby também podem retornar valores usando a palavra-chave return, embora isso seja opcional. Se o método não especificar explicitamente um valor de retorno, ele retornará implicitamente o valor da última expressão avaliada dentro do método.
 </p>
 </body>
 </html>
