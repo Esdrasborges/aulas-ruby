@@ -181,5 +181,67 @@ Depois de definido, o método pode ser chamado em qualquer lugar do código, pas
 
 Métodos em Ruby também podem retornar valores usando a palavra-chave return, embora isso seja opcional. Se o método não especificar explicitamente um valor de retorno, ele retornará implicitamente o valor da última expressão avaliada dentro do método.
 </p>
+<h2>Gems</h2>
+<p>Em termos de programação, "Gems" são pacotes de software em Ruby que contêm código reutilizável e funcionalidades adicionais que podem ser criadas em seus próprios projetos. As Gems são criadas por desenvolvedores e disponibilizadas para uso da comunidade através do gerenciador de pacotes do Ruby, chamado "RubyGems".
+
+  As Gems são uma forma eficiente de compartilhar e reutilizar código entre projetos Ruby, permitindo que os desenvolvedores economizem tempo e esforço ao não terem que escrever o mesmo código repetidamente. Existem milhares de Gems disponíveis para uso em uma ampla variedade de áreas, desde desenvolvimento web até processamento de dados e muito mais.</p>
+<h1>Programação Orientada a Objeto</h1>
+<p>A Programação Orientada a Objetos (POO) é um paradigma de programação que permite criar programas organizados em objetos, que são instâncias de classes. Ruby é uma linguagem de programação dinâmica e orientada a objetos que suportam a POO de forma nativa. Aqui estão alguns conceitos básicos de POO em Ruby:
+
+  Classe: Uma classe é um plano, um molde, ou um projeto para criar objetos. É uma estrutura que define as características e comportamentos de um objeto. Em Ruby, uma classe é criada usando a palavra-chave class, seguida pelo nome da classe em letras maiúsculas.
+  rubi
+  
+  Copiar código
+  class Pessoa
+    # código da classe
+  end
+  Objeto: Um objeto é uma instância de uma classe. É uma representação concreta de uma classe com seus próprios atributos e comportamentos. Para criar um objeto em Ruby, você usa o método newem uma classe.
+  rubi
+  
+  Copiar código
+  pessoa = Pessoa.new
+  Atributos: Os atributos são características de um objeto que são armazenados como variável de instância em uma classe. Você pode definir atributos em uma classe usando a palavra-chave attr_accessor, attr_reader, ou attr_writer.
+  rubi
+  
+  Copiar código
+  class Pessoa
+    attr_accessor :nome, :idade
+  end
+  
+  pessoa = Pessoa.new
+  pessoa.nome = "João"
+  pessoa.idade = 30
+  puts pessoa.nome # imprime "João"
+  puts pessoa.idade # imprime 30
+  Métodos: Os métodos são comportamentais associados a uma classe que podem ser invocados em objetos dessa classe. Você pode definir métodos em uma classe usando uma palavra-chave def.
+  rubi
+  
+  Copiar código
+  class Pessoa
+    def saudacao
+      puts "Olá, eu sou #{@nome} e tenho #{@idade} anos."
+    end
+  end
+  
+  pessoa = Pessoa.new
+  pessoa.nome = "João"
+  pessoa.idade = 30
+  pessoa.saudacao # imprime "Olá, eu sou João e tenho 30 anos."
+  Herança: A herança permite criar uma nova classe que herda os atributos e métodos de uma classe base. Em Ruby, você pode usar uma palavra-chave classseguida pelo nome da nova classe e, em seguida, < seguido pelo nome da classe base.
+  rubi
+  
+  Copiar código
+  class Aluno < Pessoa
+    attr_accessor :matricula
+  end
+  
+  aluno = Aluno.new
+  aluno.nome = "Maria"
+  aluno.idade = 25
+  aluno.matricula = "12345"
+  puts aluno.nome # imprime "Maria"
+  puts aluno.idade # imprime 25
+  puts aluno.matricula # imprime "12345"
+  Esses são alguns dos conceitos básicos de POO em Ruby. Com essas informações, você pode começar a criar classes, objetos, atributos e métodos em Ruby para criar programas orientados a objetos.</p>
 </body>
 </html>
