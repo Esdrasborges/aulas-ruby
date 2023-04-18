@@ -10,31 +10,31 @@
     <h1>Arrays</h1>
 <p>Uma estrutura muito utilizada quando escrevemos código são os arrays. Basicamente são listas ordenadas de elementos é uma estrutura capaz de armazenar um conjunto de valores sem a necessidade de criar várias variáveis.
 Em Ruby, um array é declarado com a notação de colchetes [] e a primeira posição de um array será sempre 0 (zero). No exemplo abaixo, criamos um array chamado alunos e inserimos valores nas posições 0, 1 e 2.
+<br/>
+alunos = ['André', 'Pedro', 'Carolina'] <br/>
+alunos = ['André', 'Pedro', 'Carolina'] <br/>
+alunos[0] # "André" <br/>
+alunos[1] # "Pedro" <br/>
+alunos[-1] # último elemento do array, nesse caso, "Carolina" <br/>
 
-alunos = ['André', 'Pedro', 'Carolina']
-alunos = ['André', 'Pedro', 'Carolina']
-alunos[0] # "André"
-alunos[1] # "Pedro"
-alunos[-1] # último elemento do array, nesse caso, "Carolina"
+Em Ruby os arrays são dinâmicos, portanto você não precisa definir seu tamanho inicial, mas se preferir definir você também pode. Caso tenha criado um array com 10 posições e precise guardar um novo dado no array, você poderá fazê-lo sem problemas pois o array será expandido automaticamente conforme a necessidade. <br/>
 
-Em Ruby os arrays são dinâmicos, portanto você não precisa definir seu tamanho inicial, mas se preferir definir você também pode. Caso tenha criado um array com 10 posições e precise guardar um novo dado no array, você poderá fazê-lo sem problemas pois o array será expandido automaticamente conforme a necessidade.
+Diferentemente de outras linguagens, em Ruby os arrays também podem guardar tipos de dados distintos. Portanto, você pode guardar uma String na primeira posição, um número inteiro na segunda, um número real na terceira, um objeto na quarta, etc. <br/>
+Em Ruby, podemos adicionar e remover itens sem essa preocupação. Acrescentar ou remover itens de um array também é muito simples em Ruby: <br/>
 
-Diferentemente de outras linguagens, em Ruby os arrays também podem guardar tipos de dados distintos. Portanto, você pode guardar uma String na primeira posição, um número inteiro na segunda, um número real na terceira, um objeto na quarta, etc.
-Em Ruby, podemos adicionar e remover itens sem essa preocupação. Acrescentar ou remover itens de um array também é muito simples em Ruby:
-
-alunos << 'Laura' # adiciona o valor "Laura" na última posição do array alunos 
-alunos.pop() # remove o último valor do array, nesse caso, “Laura”
+alunos << 'Laura' # adiciona o valor "Laura" na última posição do array alunos <br/> 
+alunos.pop() # remove o último valor do array, nesse caso, “Laura” <br/>
 </p>
 <h2>Iterando em arrays</h2>
 <h3>Método EACH DO</h3>
-<>É muito comum, em diversas situações, precisarmos iterar, ou seja, verificar cada um dos elementos de um array, e fazer algum processamento se for necessário.
-Exemplo: 
+<>É muito comum, em diversas situações, precisarmos iterar, ou seja, verificar cada um dos elementos de um array, e fazer algum processamento se for necessário. <br/>
+Exemplo: <br/>
 
-meu_array = [10, 20, 30, 40, 50]
+meu_array = [10, 20, 30, 40, 50]<br/>
 
-meu_array.each do |elemento|
-  puts elemento
-end
+meu_array.each do |elemento| <br/>
+  puts elemento <br/>
+end<br/>
 
 Na linha 1, criamos um array com cinco elementos numéricos quaisquer. Na linha 3, usamos o método each no meu_array para que possamos iterar entre seus elementos. A cada iteração do laço, um dos valores armazenados no meu_array será atribuído à variável elemento (definida entre | e |). Portanto, nesse caso, na primeira iteração, o valor de elemento será 10; na segunda iteração, o valor de elemento será 20; na terceira iteração, o valor de elemento será 30, e assim sucessivamente, até que a variável elemento tenha assumido o valor de cada posição do meu_array. Vale salientar que, o nome da variável elemento é definido pelo próprio programador, obedecendo as normas de nomenclatura de variáveis.
 <H3>Método MAP</H3>

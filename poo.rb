@@ -27,5 +27,5 @@ class Computer
     end
 end
 
-computer  = Computer.new #(computer) é o objeto criado a partir da classe Computer
-puts computer.turn_on 
+computer  = Computer.new #(computer) é o objeto criado a partir da classe Computer, Computer.new é o criador desse objeto
+puts computer.turn_on  

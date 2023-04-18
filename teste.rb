@@ -39,27 +39,33 @@
 #      puts "###################"
 #      puts nomes_completos
 
-result = ""
-loop do 
-    puts result
-    puts 'Selecione uma das seguintes opções'
-    puts '1 - Descobrir a idade de uma pessoa'
-    puts '0 - Sair'
-    puts 'Opção'
+# result = ""
+# loop do 
+#     puts result
+#     puts 'Selecione uma das seguintes opções'
+#     puts '1 - Descobrir a idade de uma pessoa'
+#     puts '0 - Sair'
+#     puts 'Opção'
 
-    option = gets.chomp.to_i
-    if option == 1
-        print 'Digite o ano do nascimento: '
-        yaer_of_birth = gets.chomp.to_i
-        print 'Digite o ano atual: '
-        current_year = gets.chomp.to_i
-        age = current_year - yaer_of_birth
-        result = "Quem nasceu no ano de #{yaer_of_birth}, tem #{age} anos em #{current_year}"
-    elsif option == 0
-        break if option == 0
-    else 
-        result = 'Opçaõ Invalida'
-    end
-    system "clear"
-end
+#     option = gets.chomp.to_i
+#     if option == 1
+#         print 'Digite o ano do nascimento: '
+#         yaer_of_birth = gets.chomp.to_i
+#         print 'Digite o ano atual: '
+#         current_year = gets.chomp.to_i
+#         age = current_year - yaer_of_birth
+#         result = "Quem nasceu no ano de #{yaer_of_birth}, tem #{age} anos em #{current_year}"
+#     elsif option == 0
+#         break if option == 0
+#     else 
+#         result = 'Opçaõ Invalida'
+#     end
+#     system "clear"
+# end
 
+loop do
+    hello = 'Hello Word!'
+    puts hello
+    # Add a break condition to exit the loop
+     break
+  end
